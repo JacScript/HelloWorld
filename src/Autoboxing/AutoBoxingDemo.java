@@ -2,7 +2,7 @@ package Autoboxing;
 
 public class AutoBoxingDemo {
     public static void main(String[] args){
-        int i = 0;
+        int i = 10;
 
         //Autobox
         Integer iObj = Integer.valueOf(i);
@@ -18,7 +18,7 @@ public class AutoBoxingDemo {
         //Auto-unBox
         char ch = charObj;
         System.out.println("Value of ch: " + ch);
-        System.out.println("Value of charObj" + charObj);
+        System.out.println("Value of charObj: " + charObj);
     }
 
 
