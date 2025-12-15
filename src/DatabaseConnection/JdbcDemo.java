@@ -9,7 +9,7 @@ public class JdbcDemo {
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost/test";
 
-        String sql = "INSERT INTO student (rollno, name, age) VALUES (1,'jac', 26)";
+        String sql = "INSERT INTO student (rollno, name, age) VALUES (?,?, ?)";
 
         try (Connection conn = DriverManager.getConnection(url, "miles", "miles123");
              PreparedStatement pst = conn.prepareStatement(sql)) {
